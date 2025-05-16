@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43e9a10c7d8e6dec681f38af2cb04cd6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 300px; 
+                    z-index:9999; font-size:14px;
+                    background-color:white; padding:10px;
+                    border-radius:5px; box-shadow:0 0 5px grey;">
+                    <b>Маршрут от Ленина 31 до Парк Победы:</b><br>
+                    Общее расстояние: 13.97 км<br>
+                    Примерное время:<br>
+                    - Пешком: 167.6 мин<br>
+                    - На машине: 16.8 мин
+                </div>
+            
+    
+            <div class="folium-map" id="map_43e9a10c7d8e6dec681f38af2cb04cd6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43e9a10c7d8e6dec681f38af2cb04cd6 = L.map(
+                "map_43e9a10c7d8e6dec681f38af2cb04cd6",
+                {
+                    center: [54.77436265, 56.00233745],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b87097ba2c02341b0b2319e69bc40785 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b87097ba2c02341b0b2319e69bc40785.addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+        
+    
+            var marker_1aeb85c9b74970a7c3763b3ae4b4e27d = L.marker(
+                [54.7255, 55.9476],
+                {
+}
+            ).addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+        
+    
+            var icon_4ada53b7e590402acc0be114e8ec776f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2998ca9fe1eac6f54c50ec74f263233a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_717576af85dba04119cc134423926f17 = $(`<div id="html_717576af85dba04119cc134423926f17" style="width: 100.0%; height: 100.0%;">Старт: Ленина 31</div>`)[0];
+                popup_2998ca9fe1eac6f54c50ec74f263233a.setContent(html_717576af85dba04119cc134423926f17);
+            
+        
+
+        marker_1aeb85c9b74970a7c3763b3ae4b4e27d.bindPopup(popup_2998ca9fe1eac6f54c50ec74f263233a)
+        ;
+
+        
+    
+    
+                marker_1aeb85c9b74970a7c3763b3ae4b4e27d.setIcon(icon_4ada53b7e590402acc0be114e8ec776f);
+            
+    
+            var marker_d0cc9e15f0a9042c5e3e5200c3ee62a1 = L.marker(
+                [54.8232253, 56.0570749],
+                {
+}
+            ).addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+        
+    
+            var icon_8939d4c546807cfff1bbb548ba2b3cbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74ac346efca6f5394e1901276a539b97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c2b07d4249ece289e5af5a7b84f3cd9 = $(`<div id="html_8c2b07d4249ece289e5af5a7b84f3cd9" style="width: 100.0%; height: 100.0%;">Конец: Парк Победы</div>`)[0];
+                popup_74ac346efca6f5394e1901276a539b97.setContent(html_8c2b07d4249ece289e5af5a7b84f3cd9);
+            
+        
+
+        marker_d0cc9e15f0a9042c5e3e5200c3ee62a1.bindPopup(popup_74ac346efca6f5394e1901276a539b97)
+        ;
+
+        
+    
+    
+                marker_d0cc9e15f0a9042c5e3e5200c3ee62a1.setIcon(icon_8939d4c546807cfff1bbb548ba2b3cbc);
+            
+    
+            var poly_line_75807dc4110ab3e9ad8b81fe1481daa0 = L.polyline(
+                [[54.7261015, 55.9474304], [54.7285496, 55.9485787], [54.7310673, 55.9497969], [54.7334556, 55.9509697], [54.7357161, 55.9521218], [54.7347829, 55.9579542], [54.734671, 55.9586442], [54.7350178, 55.9591589], [54.7352044, 55.9595807], [54.7353531, 55.9600573], [54.7361719, 55.9650439], [54.7370862, 55.9706672], [54.7373626, 55.972363], [54.7383594, 55.9787556], [54.7386343, 55.9809941], [54.7386609, 55.9820806], [54.7387123, 55.9825959], [54.7387406, 55.9827143], [54.7390984, 55.9837995], [54.739209, 55.9840838], [54.73985, 55.9849914], [54.7416885, 55.9873663], [54.7421814, 55.9880229], [54.7427521, 55.9886772], [54.7443109, 55.9906508], [54.7458627, 55.9926221], [54.746429, 55.993328], [54.7469801, 55.9939995], [54.755721, 56.0051161], [54.7589699, 56.0092233], [54.7600869, 56.0106117], [54.7604697, 56.0111061], [54.7611024, 56.0119154], [54.76331, 56.0146996], [54.7657062, 56.0178289], [54.766789, 56.0192079], [54.7672258, 56.0197712], [54.7692228, 56.0223121], [54.7698646, 56.0231219], [54.7704178, 56.02382], [54.7743395, 56.0286999], [54.7767361, 56.0301659], [54.777459, 56.0304871], [54.7781351, 56.0307916], [54.7813126, 56.0322226], [54.7819983, 56.0325314], [54.7831977, 56.0330931], [54.7898439, 56.0361321], [54.7908188, 56.0365591], [54.7914222, 56.0368366], [54.7937563, 56.0379005], [54.7943255, 56.0381481], [54.7949033, 56.0384271], [54.7956899, 56.0387734], [54.7961521, 56.0389846], [54.7999194, 56.0425965], [54.8041667, 56.0479135], [54.8095128, 56.0533647], [54.8099328, 56.0539502], [54.8107998, 56.0551589], [54.811832, 56.0563223], [54.8121224, 56.0564269], [54.8128854, 56.0567018], [54.8175389, 56.0576396], [54.8179253, 56.0575194], [54.8206852, 56.057644], [54.8220253, 56.0587689], [54.822282, 56.0589905]],
+                {"bubblingMouseEvents": true, "color": "#1E90FF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1E90FF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8}
+            ).addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+        
+    
+        var popup_0bbba0b5bd3aa8a5b2423271566b5c2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad5ab35e2ee4d8cff8626991bc264a06 = $(`<div id="html_ad5ab35e2ee4d8cff8626991bc264a06" style="width: 100.0%; height: 100.0%;"><b>Информация о маршруте:</b><br>                          Расстояние: 13.97 км<br>                          Пешком: ~167.6 мин<br>                          На машине: ~16.8 мин</div>`)[0];
+                popup_0bbba0b5bd3aa8a5b2423271566b5c2a.setContent(html_ad5ab35e2ee4d8cff8626991bc264a06);
+            
+        
+
+        poly_line_75807dc4110ab3e9ad8b81fe1481daa0.bindPopup(popup_0bbba0b5bd3aa8a5b2423271566b5c2a)
+        ;
+
+        
+    
+    
+            var tile_layer_0ff800282f7128de8799b5ad97b22502 = L.tileLayer(
+                "Stamen Toner",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0ff800282f7128de8799b5ad97b22502.addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+        
+    
+            var layer_control_04ef9d6f1e1c8a9fc1acbd48ca1efac8_layers = {
+                base_layers : {
+                    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" : tile_layer_b87097ba2c02341b0b2319e69bc40785,
+                    "stamentoner" : tile_layer_0ff800282f7128de8799b5ad97b22502,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_04ef9d6f1e1c8a9fc1acbd48ca1efac8 = L.control.layers(
+                layer_control_04ef9d6f1e1c8a9fc1acbd48ca1efac8_layers.base_layers,
+                layer_control_04ef9d6f1e1c8a9fc1acbd48ca1efac8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_43e9a10c7d8e6dec681f38af2cb04cd6);
+
+        
+</script>
+</html>
